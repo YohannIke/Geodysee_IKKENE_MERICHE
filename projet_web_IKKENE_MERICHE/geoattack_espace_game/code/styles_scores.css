@@ -1,0 +1,60 @@
+/* Imports */
+@import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light");
+
+/* Navigation */
+li {
+    display : inline-flex;
+    }
+  
+  ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+  }
+
+   #accueil:hover , #regles:hover , #jouer:hover , #scores:hover{
+   background-color: #070707;
+   cursor: pointer;
+   transition: 0.4s ease-in-out;
+   }
+   #accueil:hover a , #regles:hover a, #jouer:hover a, #scores:hover a{
+       color: rgb(255, 255, 255);
+   }
+
+   /* Image de fond, gestion des textes */
+   body{
+       background : url("fond_scores.jpg") fixed no-repeat top right;
+       background-size : cover;
+       font-family: "Shadows Into Light";
+       letter-spacing: 1px;
+   }
+   
+   a {
+       position: left;
+       padding: 1rem 0 0.5rem;
+       margin: 0 1.5rem;
+       color: rgb(255, 255, 255);
+       text-decoration: none;
+       text-transform: uppercase;
+   }
+      
+   h1 {
+       font-size : 55px;
+       color: rgb(1, 148, 45);
+       font-family : "Shadows Into Light";
+       text-align: center;
+       margin-bottom: 0;
+   }
+
+   #score{
+    font-size : 50px;
+    color: rgb(255, 255, 255);
+    font-family : "Shadows Into Light";
+    margin-left: 75px;
+  }
+  
+  #liste_scores{
+    color: rgb(255, 255, 255);
+    margin-left: 50px;
+    font-size : 30px;
+  }

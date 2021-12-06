@@ -1,0 +1,66 @@
+/* Imports */
+@import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light");
+
+/* Navigation */
+
+   
+   li {
+     display : inline-flex;
+   }
+   
+   ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+   }
+
+    #accueil:hover , #regles:hover , #jouer:hover , #scores:hover{
+	background-color: #070707;
+	cursor: pointer;
+	transition: 0.4s ease-in-out;
+    }
+    #accueil:hover a , #regles:hover a, #jouer:hover a, #scores:hover a{
+        color: rgb(255, 255, 255);
+    }
+
+    /* Image de fond, gestion des textes */
+    body{
+        background : url("fond_ecran.jpg") fixed no-repeat top right;
+        background-size : cover;
+        font-family: "Shadows Into Light";
+        letter-spacing: 1px;
+    }
+    
+    a {
+        position: left;
+        padding: 1rem 0 0.5rem;
+        margin: 0 1.5rem;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+       
+    h1 {
+        font-size : 50px;
+        font-family : "Shadows Into Light";
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+/* Bouton jouer*/
+.boutton a{
+    position: absolute;
+    left : 42%;
+    top : 85%;
+    width:200px;
+    font-size:50px;
+    font-family : "Shadows Into Light";
+    color: white;
+    line-height:25px;
+    text-align:center;
+    border: 3px solid whitesmoke;
+}
+.boutton a:hover {
+    border : 6px solid black;
+    color: black;
+}

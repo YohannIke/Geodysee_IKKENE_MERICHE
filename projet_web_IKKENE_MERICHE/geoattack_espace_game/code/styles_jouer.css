@@ -1,0 +1,154 @@
+/* Imports */
+@import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light");
+
+/* Navigation */
+    li {
+        display : inline-flex;
+    }
+  
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+   #accueil:hover , #regles:hover , #jouer:hover , #scores:hover{
+   background-color: #070707;
+   cursor: pointer;
+   transition: 0.3s ease-in-out;
+   }
+   #accueil:hover a , #regles:hover a, #jouer:hover a, #scores:hover a{
+       color: rgb(255, 255, 255);
+   }
+
+   /* Image de fond, gestion des textes */
+body{
+    background : url("fond_jouer.jpg") fixed no-repeat top right;
+    background-size : cover;
+    font-family: "Shadows Into Light";
+    letter-spacing: 1px;
+}
+   
+   a {
+       position: left;
+       padding: 0.5rem 0 0.5rem;
+       margin: 0 1.5rem;
+       color: rgb(255, 255, 255);
+       text-decoration: none;
+       text-transform: uppercase;
+   }
+   h1 {
+    font-size : 20px;
+    font-family : "Shadows Into Light";
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-bottom: 0;
+  }
+  .container {
+    display: grid; 
+    grid-template-columns: 4fr 4fr 1fr 1fr; 
+    grid-template-rows: 0.3fr 1.4fr 1.4fr 1.4fr 1.1fr; 
+    gap: 0px 0px;
+  }
+  #time{
+	color : rgb(255, 255, 255);
+	font-size: 2em;
+	font-weight:bold;
+}
+  .timer { grid-area: 1 / 1 / 2 / 2;
+    display:flex;
+	justify-content: center;
+	align-items: center;}
+  #formulaire { grid-area: 5 / 3 / 6 / 5; 
+    text-align: center;}
+  #divmap {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 6; 
+    height: 100%;}
+    #map{
+        height: 100%;
+        visibility: visible;
+    }
+
+    #p1 { grid-area: 2 / 3 / 3 / 4; 
+    font-size: 0em;
+    background-size: contain;
+	Background-repeat: no-repeat;
+    }
+    #p3 { grid-area: 3 / 3 / 4 / 4; 
+    font-size: 0em;
+    background-size: contain;
+	Background-repeat: no-repeat;}
+    #p2 { grid-area: 2 / 4 / 3 / 5; 
+    font-size: 0em;
+    background-size: contain;
+	Background-repeat: no-repeat;}
+    #p4 { grid-area: 3 / 4 / 4 / 5; 
+    font-size: 0em;
+    background-size: contain;
+	Background-repeat: no-repeat;}
+    #p5 { grid-area: 4 / 3 / 5 / 4; 
+    font-size: 0em;
+    background-size: contain;
+	Background-repeat: no-repeat;}
+    #p6 { grid-area: 4 / 4 / 5 / 5; 
+    font-size: 0em;
+    background-size: contain;
+	Background-repeat: no-repeat;}
+    #code { grid-area: 1 / 3 / 2 / 5; }
+    
+    
+    #code {grid-area: 1 / 3 / 2 / 5;
+        font-size : 25px;
+        font-family : "Shadows Into Light";
+        text-align: center;
+        color: rgb(255, 255, 255);
+        margin-bottom: 0;
+    }
+    #monument {
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+        gap: 0px 0px; 
+        grid-area: 1 / 2 / 2 / 3; 
+      }
+    
+    #m1 { grid-area: 1 / 1 / 2 / 2; 
+    font-size: 0em;
+    background: center;
+    background-image : url("icones/fond_rush.jpg");
+    background-size: cover;
+    Background-repeat: no-repeat;
+    }
+    #m2 { grid-area: 1 / 2 / 2 / 3; 
+    font-size: 0em;
+    background: center;
+    background-image : url("icones/fond_taj.jpg");
+    background-size: cover;
+    Background-repeat: no-repeat;}
+    #m3 { grid-area: 1 / 3 / 2 / 4; 
+    font-size: 0em;
+    background: center;
+    background-image : url("icones/fond_big.jpg");
+    
+    background-size: cover;
+    Background-repeat: no-repeat;}
+    #m4 { grid-area: 1 / 4 / 2 / 5; 
+    background: center;   
+    font-size: 0em;
+    background-image : url("icones/fond_tour.jpg");
+    background-size: cover;
+    Background-repeat: no-repeat;}
+    #m5 { grid-area: 1 / 5 / 2 / 6; 
+    font-size: 0em;
+    background: center;
+    
+    background-image: url("icones/fond_paques.jpg");
+    background-size: cover;
+    Background-repeat: no-repeat;}
+    
+
+    
+  
+  
